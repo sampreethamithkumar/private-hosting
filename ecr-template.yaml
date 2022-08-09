@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: React App private hosting
+
+Parameters:
+  EcrName:
+    Type: String
+
+Resources:
+  Ecr:
+    Type: AWS::ECR::Repository
+    Properties: 
+      RepositoryName: !Sub ${EcrName}
+      ImageScanningConfiguration:
+        ScanOnPush: true
