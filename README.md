@@ -15,3 +15,5 @@ Update AwsAccountId in Makefile
 Run the below command to Private Host React App
 
 `make deploy`
+
+"Testing commit verified"
